@@ -50,7 +50,9 @@
       <div class="container">
         <h1>¡Hola, mund0!</h1>
         <p>Esta tarea es para practicar el uso de bootstrap implementando distintos tipos de funcionalidades a un template jumbotron.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Sepa más »</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="popover"
+          title="Más..." data-content="Esta página fue hecha usando lenguaje HTML5, CSS3 y JavaScript.
+          Con framework Bootstrap3 y librerías JQuery.">Sepa más »</a></p>
       </div>
     </div>
 
@@ -99,6 +101,12 @@
         <p>© 2016 GSS, Inc.</p>
       </footer>
     </div> <!-- /container -->
+
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
 
 </body>
 </html>
